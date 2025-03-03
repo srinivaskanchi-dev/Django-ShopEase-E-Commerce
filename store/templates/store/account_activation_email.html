@@ -1,0 +1,12 @@
+{% autoescape off %}
+Hi {{ user.first_name }},
+
+Thank you for registering with ShopEase. Please click on the link below to activate your account:
+
+http://127.0.0.1:8000{% url 'activate' uidb64=uid token=token %}
+
+If you did not create this account, you can safely ignore this email.
+
+Best regards,
+ShopEase Team
+{% endautoescape %} 

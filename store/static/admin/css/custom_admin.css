@@ -1,0 +1,38 @@
+/* Custom styles for the admin interface */
+.field-get_total {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.field-status {
+    font-weight: bold;
+}
+
+.field-status .pending {
+    color: #ffc107;
+}
+
+.field-status .processing {
+    color: #17a2b8;
+}
+
+.field-status .shipped {
+    color: #28a745;
+}
+
+.field-status .delivered {
+    color: #28a745;
+}
+
+.field-status .cancelled {
+    color: #dc3545;
+}
+
+/* Responsive improvements */
+@media (max-width: 767px) {
+    .column-user,
+    .column-total_amount,
+    .column-status {
+        min-width: 100px;
+    }
+} 

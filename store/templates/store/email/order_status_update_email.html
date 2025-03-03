@@ -1,0 +1,25 @@
+{% autoescape off %}
+Hi {{ order.user.first_name }},
+
+Your order #{{ order.id }} has been updated to: {{ order.status }}
+
+Order Details:
+-------------
+Order Number: #{{ order.id }}
+Date: {{ order.created_at|date:"F j, Y" }}
+New Status: {{ order.status }}
+Total Amount: ₹{{ order.total_amount }}
+
+Items in your order:
+{% for item in order.orderitem_set.all %}
+- {{ item.product.name }} x {{ item.quantity }} = ₹{{ item.get_total }}
+{% endfor %}
+
+Shipping Address:
+{{ order.shipping_address }}
+
+If you have any questions about your order, please don't hesitate to contact us.
+
+Best regards,
+ShopEase Team
+{% endautoescape %} 

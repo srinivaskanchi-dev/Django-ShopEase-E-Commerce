@@ -1,0 +1,135 @@
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.alert {
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-control {
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+}
+
+.invalid-feedback {
+    display: block;
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.form-text {
+    color: #6c757d;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+}
+
+.btn-primary {
+    padding: 0.75rem;
+    font-weight: 500;
+}
+
+/* Compact form styles */
+.form-control-sm {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.form-label {
+    margin-bottom: 0.25rem;
+}
+
+.invalid-feedback {
+    font-size: 0.75rem;
+}
+
+.btn-sm {
+    font-size: 0.875rem;
+}
+
+/* Search bar styles */
+.search-highlight {
+    background-color: #fff3cd;
+    padding: 0.2em;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .navbar form {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+/* Filter styles */
+.filter-card {
+    position: sticky;
+    top: 1rem;
+}
+
+.price-range-inputs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.pagination .page-link {
+    color: #3498db;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .filter-card {
+        position: static;
+        margin-bottom: 1rem;
+    }
+} 

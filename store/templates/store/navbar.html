@@ -1,0 +1,14 @@
+<a class="nav-link" href="{% url 'cart' %}">
+    <div class="position-relative d-inline-block">
+        <i class="bi bi-cart3" style="font-size: 1.2rem;"></i>
+        {% if cart_count > 0 %}
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">
+                {{ cart_count }}
+            </span>
+        {% else %}
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary" id="cart-count">
+                0
+            </span>
+        {% endif %}
+    </div>
+</a> 

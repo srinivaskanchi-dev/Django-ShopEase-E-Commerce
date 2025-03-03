@@ -1,0 +1,26 @@
+{% autoescape off %}
+Hi {{ order.first_name }},
+
+Thank you for your order! Your order #{{ order.id }} has been received and is being processed.
+
+Order Details:
+-------------
+Order Number: #{{ order.id }}
+Date: {{ order.created_at|date:"F j, Y" }}
+Total Amount: ₹{{ order.total_amount }}
+
+Items Ordered:
+{% for item in order.orderitem_set.all %}
+- {{ item.product.name }} x {{ item.quantity }} = ₹{{ item.get_total }}
+{% endfor %}
+
+Shipping Address:
+{{ order.shipping_address }}
+
+Phone Number: {{ order.phone_number }}
+
+We'll send you another email when your order ships.
+
+Best regards,
+ShopEase Team
+{% endautoescape %} 

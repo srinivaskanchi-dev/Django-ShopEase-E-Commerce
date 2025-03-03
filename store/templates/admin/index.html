@@ -1,0 +1,36 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="module">
+    <h2>Quick Statistics</h2>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="quick-stats">
+                <h3>Orders Today</h3>
+                <p>{{ orders_today }}</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="quick-stats">
+                <h3>Total Products</h3>
+                <p>{{ total_products }}</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="quick-stats">
+                <h3>Total Customers</h3>
+                <p>{{ total_customers }}</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="quick-stats">
+                <h3>Revenue Today</h3>
+                <p>${{ revenue_today }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ block.super }}
+{% endblock %} 

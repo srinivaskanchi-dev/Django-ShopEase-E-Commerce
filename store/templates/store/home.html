@@ -1,0 +1,196 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Welcome to ShopEase{% endblock %}
+
+{% block content %}
+<!-- custom CSS for animation -->
+<style>
+    .product-card {
+        transition: all 0.3s ease;
+        height: 10vw;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+        transition: all 0.3s ease;
+    }
+
+    .product-card:hover img {
+        transform: scale(1.05);
+    }
+    .col {
+        height: 60vh;
+    }
+    .card-title{
+        height: 15vh;
+    }
+    /* General Styles */
+.container1 {
+  font-family: Arial, sans-serif;
+  background-color: #2d2d2d;
+  color: white;
+  margin: 0px;
+  padding: 0;
+}
+.container-fluid {
+ max-width: 100%;
+ margin: 0 auto;
+ padding: 0px;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.highlight {
+  color: #f97316; /* Orange */
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  /* margin-top: 30px; */
+  margin-left: 30px;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 1rem; */
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .services {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.service-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.footer {
+  background-color: #969191;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 8vh;
+}
+.fa-solid{
+    font-size: xx-large;
+}
+.fa-brands{
+    font-size: xx-large;
+}
+</style>
+
+<div class="container py-4">
+    <!-- Hero Section -->
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold mb-3">Welcome to ShopEase</h1>
+        <p class="lead text-muted">Discover amazing products at great prices</p>
+    </div>
+
+    <!-- Products Section -->
+    <div class="mb-4">
+        <h2 class="mb-4 text-center">Our Products</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            {% for product in products %}
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">₹{{ product.price }}</p>
+                        <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container1">
+        <div class="header">
+          <h1 class="title">
+            Shop<span class="highlight">Ease</span>
+          </h1>
+          <p class="description">
+            Your go-to destination for quality products at unbeatable prices. Shop smart, shop easy!
+          </p>
+        </div>
+    
+        <div class="social-icons">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    
+        <div class="services">
+          <div class="service-item">
+            <i class="fa-solid fa-gift"></i>
+            <p class="service-title">Best Deals & Offers</p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="service-title">Customer Support</p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-file-contract"></i>
+            <p class="service-title">Terms & Conditions</p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-truck"></i>
+            <p class="service-title">Shipping & Delivery</p>
+          </div>
+        </div>
+      </div>
+    
+      <footer class="footer">
+        <p>
+          Copyright © <span id="year"></span> ShopEase. All rights reserved.
+        </p>
+      </footer>
+    
+      <script>
+        // Update the year dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+</div>
+{% endblock %} 
