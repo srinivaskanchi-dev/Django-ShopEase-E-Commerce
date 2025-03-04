@@ -68,10 +68,8 @@ python manage.py runserver
 ## Live Demo
 Visit [ShopEase](https://shopease.pythonanywhere.com)
 
-## Screenshots
-[Add your application screenshots here]
 
 ## Developer
 - Name: Srinivas Kanchi
-- GitHub: [Your GitHub Profile]
-- Email: [Your Email]
+- GitHub: https://github.com/srinivaskanchi-dev
+- Email: srinivaskanchi752@gmail.com
