@@ -59,10 +59,10 @@ Access the application at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 - ✅ Shopping Cart & Checkout
 - ✅ Order Management
 
-Contributing
+# Contributing
 Feel free to fork this repository and contribute! Pull requests are welcome.
 
-## Live Demo
+# Live Demo
 Visit [ShopEase](https://shopease.pythonanywhere.com)
 
 
