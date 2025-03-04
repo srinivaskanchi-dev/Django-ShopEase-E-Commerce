@@ -2,18 +2,18 @@
 
 A modern, fully-functional e-commerce web application built with Django.
 
-# Tech Stack
--Backend
--Python
--Django
--Django REST Framework
--SQLite
+Tech Stack
+# Backend
+- Python
+- Django
+- Django REST Framework
+- SQLite
 
 # Frontend
--HTML
--CSS
--JavaScript
--Bootstrap (for responsive UI)
+- HTML
+- CSS
+- JavaScript
+- Bootstrap (for responsive UI)
 
 # Project Structure
 ```
@@ -54,10 +54,10 @@ python manage.py runserver
 Access the application at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 # Features
--✅ User Authentication & Registration
--✅ Product Listing & Search
--✅ Shopping Cart & Checkout
--✅ Order Management
+- ✅ User Authentication & Registration
+- ✅ Product Listing & Search
+- ✅ Shopping Cart & Checkout
+- ✅ Order Management
 
 Contributing
 Feel free to fork this repository and contribute! Pull requests are welcome.
