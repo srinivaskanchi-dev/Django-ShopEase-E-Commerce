@@ -2,20 +2,20 @@
 
 A modern, fully-functional e-commerce web application built with Django.
 
-Tech Stack
-# Backend
+## Tech Stack
+### Backend
 - Python
 - Django
 - Django REST Framework
 - SQLite
 
-# Frontend
+### Frontend
 - HTML
 - CSS
 - JavaScript
 - Bootstrap (for responsive UI)
 
-# Project Structure
+### Project Structure
 ```
 Django-ShopEase-E-Commerce/
 ├── shopease/           # Main Django project settings
