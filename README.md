@@ -15,7 +15,9 @@ HTML
 CSS
 JavaScript
 Bootstrap (for responsive UI)
-...
+
+#Project Structure
+```
 Django-ShopEase-E-Commerce/
 ├── shopease/           # Main Django project settings
 ├── store/              # E-commerce app (products, cart, orders, etc.)
@@ -25,31 +27,31 @@ Django-ShopEase-E-Commerce/
 ├── requirements.txt    # Dependencies
 ├── db.sqlite3          # SQLite database
 └── README.md           # Project documentation
-...
-
+```
 Installation & Setup
 1. Clone the Repository
-...bash
+```bash
 git clone https://github.com/yourusername/Django-ShopEase.git
 cd Django-ShopEase-E-Commerce
-...
+```
 
 3. Create a Virtual Environment & Activate
-...bash
+```bash
 git clone https://github.com/yourusername/Django-ShopEase.git
 cd Django-ShopEase-E-Commerce
-...
+```
 
 5. Install Dependencies
-...bash
+```bash
 pip install -r requirements.txt
-...
+```
 
 7. Run Migrations & Start Server
-...bash
+```bash
 python manage.py migrate
 python manage.py runserver
-...
+```
+Access the application [at](http://127.0.0.1:8000)
 
 Features
 ✅ User Authentication & Registration
