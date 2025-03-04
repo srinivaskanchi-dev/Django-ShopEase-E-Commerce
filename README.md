@@ -17,7 +17,7 @@ JavaScript
 Bootstrap (for responsive UI)
 
 #Project Structure
-
+```
 Django-ShopEase-E-Commerce/
 ├── shopease/           # Main Django project settings
 ├── store/              # E-commerce app (products, cart, orders, etc.)
@@ -27,6 +27,7 @@ Django-ShopEase-E-Commerce/
 ├── requirements.txt    # Dependencies
 ├── db.sqlite3          # SQLite database
 └── README.md           # Project documentation
+```
 
 Installation & Setup
 1. Clone the Repository
@@ -51,7 +52,7 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
-Access the application [at](http://127.0.0.1:8000)
+Access the application at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 Features
 ✅ User Authentication & Registration
