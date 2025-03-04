@@ -29,7 +29,7 @@ Django-ShopEase-E-Commerce/
 └── README.md           # Project documentation
 ```
 
-Installation & Setup
+#Installation & Setup
 1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/Django-ShopEase.git
@@ -54,7 +54,7 @@ python manage.py runserver
 ```
 Access the application at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-Features
+#Features
 ✅ User Authentication & Registration
 ✅ Product Listing & Search
 ✅ Shopping Cart & Checkout
