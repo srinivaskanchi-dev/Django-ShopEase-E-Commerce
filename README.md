@@ -1,4 +1,4 @@
-# Django-ShopEase-E-Commerce
+# Django-ShopEase-E-Commerce-Website
 
 A modern, fully-functional e-commerce web application built with Django.
 
