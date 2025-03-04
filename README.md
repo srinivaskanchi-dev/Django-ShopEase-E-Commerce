@@ -2,19 +2,18 @@
 
 A modern, fully-functional e-commerce web application built with Django.
 
-Tech Stack
+# Tech Stack
+-Backend
+-Python
+-Django
+-Django REST Framework
+-SQLite
 
-Backend
-Python
-Django
-Django REST Framework
-SQLite
-
-Frontend
-HTML
-CSS
-JavaScript
-Bootstrap (for responsive UI)
+# Frontend
+-HTML
+-CSS
+-JavaScript
+-Bootstrap (for responsive UI)
 
 # Project Structure
 ```
@@ -36,18 +35,18 @@ git clone https://github.com/yourusername/Django-ShopEase.git
 cd Django-ShopEase-E-Commerce
 ```
 
-3. Create a Virtual Environment & Activate
+2. Create a Virtual Environment & Activate
 ```bash
 git clone https://github.com/yourusername/Django-ShopEase.git
 cd Django-ShopEase-E-Commerce
 ```
 
-5. Install Dependencies
+3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-7. Run Migrations & Start Server
+4. Run Migrations & Start Server
 ```bash
 python manage.py migrate
 python manage.py runserver
@@ -55,10 +54,10 @@ python manage.py runserver
 Access the application at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 # Features
-User Authentication & Registration
-Product Listing & Search
-Shopping Cart & Checkout
-Order Management
+-✅ User Authentication & Registration
+-✅ Product Listing & Search
+-✅ Shopping Cart & Checkout
+-✅ Order Management
 
 Contributing
 Feel free to fork this repository and contribute! Pull requests are welcome.
