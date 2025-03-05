@@ -18,14 +18,21 @@ A modern, fully-functional e-commerce web application built with Django.
 ### Project Structure
 ```
 Django-ShopEase-E-Commerce/
-├── shopease/           # Main Django project settings
-├── store/              # E-commerce app (products, cart, orders, etc.)
-├── static/             # Static files (CSS, JS, images)
-├── media/              # Uploaded media files
-├── manage.py           # Django management script
-├── requirements.txt    # Dependencies
-├── db.sqlite3          # SQLite database
-└── README.md           # Project documentation
+│-- manage.py         # Django project manager
+│-- db.sqlite3        # Database file (if using SQLite)
+│-- requirements.txt  # Dependencies
+│-- .env              # Environment variables
+│-- shopease/         # Main application module
+│   │-- models.py     # Database models
+│   │-- views.py      # Business logic
+│   │-- templates/    # HTML templates
+│   │-- static/       # CSS, JS, images
+│   │-- urls.py       # URL routing
+│   │-- forms.py      # Django forms handling
+│   │-- admin.py      # Admin panel configurations
+│   │-- serializers.py# DRF serializers for API endpoints
+└-- templates/
+    └-- base.html     # Main template
 ```
 
 ## Installation & Setup
