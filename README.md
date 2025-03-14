@@ -7,7 +7,7 @@ A modern, fully-functional e-commerce web application built with Django.
 - Python
 - Django
 - Django REST Framework
-- SQLite
+- SQLite/MySQL
 
 ### Frontend
 - HTML
@@ -19,7 +19,7 @@ A modern, fully-functional e-commerce web application built with Django.
 ```
 Django-ShopEase-E-Commerce/
 │-- manage.py         # Django project manager
-│-- db.sqlite3        # Database file (if using SQLite)
+│-- db.sqlite3        # Database file
 │-- requirements.txt  # Dependencies
 │-- .env              # Environment variables
 │-- shopease/         # Main application module
